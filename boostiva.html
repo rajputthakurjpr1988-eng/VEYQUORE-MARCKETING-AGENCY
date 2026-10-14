@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Veyqora — Digital Marketing & Website Development, Jaipur</title>
+<meta name="description" content="Veyqora is a Jaipur digital agency: website development, SEO, social media, video editing and graphic design.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1a1033;--deep:#0b0716;--g:#7c3aed;--gl:#22d3ee;--cream:#f6f2ff;--mut:#a79fc4;--mutd:#6b6288;--line:rgba(255,255,255,.12);--h:Anton,Impact,'Arial Narrow Bold',sans-serif;--b:Manrope,system-ui,Arial,sans-serif;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:100px}
+body{font-family:var(--b);background:var(--deep);color:var(--cream);line-height:1.6;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--gl);outline-offset:3px}
+.w{max-width:1200px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--h);font-weight:400;text-transform:uppercase;line-height:1.02;letter-spacing:.005em}
+h1{font-size:clamp(46px,7.5vw,100px)}h2{font-size:clamp(38px,6vw,78px)}h3{font-size:clamp(24px,2.6vw,34px)}
+header{position:fixed;top:calc(14px + env(safe-area-inset-top,0px));left:0;right:0;z-index:50}
+nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 12px 10px 14px;border:1px solid var(--line);border-radius:99px;background:rgba(11,7,22,.78);backdrop-filter:blur(14px);max-width:1060px;margin:0 auto}
+.lg{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.04em}
+.lg i{width:38px;height:38px;border-radius:10px;background:#2a1660;display:grid;place-items:center;color:#ffd166;font:400 20px var(--h);font-style:normal}
+.nl{display:flex;gap:2px;font-weight:600;font-size:15px}
+.nl a{padding:9px 16px;border-radius:99px;color:var(--mut)}
+.nl a:hover{color:var(--cream)}.nl a.on{background:rgba(255,255,255,.1);color:var(--cream)}
+.btn{display:inline-flex;align-items:center;gap:12px;padding:12px 14px 12px 24px;border-radius:99px;background:var(--g);color:#fff;font-weight:800;border:1px solid transparent;cursor:pointer;font-family:var(--b);font-size:15px;transition:transform .25s,box-shadow .25s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(124,58,237,.5)}
+.btn b{width:34px;height:34px;border-radius:50%;background:#fff;color:var(--ink);display:grid;place-items:center}
+.btn.o{background:transparent;border-color:var(--line)}.btn.o b{background:rgba(255,255,255,.12);color:#fff}
+#mb{display:none;background:none;border:1px solid var(--line);color:var(--cream);border-radius:99px;padding:8px 14px;font:inherit}
+main{animation:in .6s both}
+@keyframes in{from{opacity:0;transform:translateY(18px)}}
+.hero{min-height:100svh;display:grid;align-items:center;padding:130px 0 70px;background:radial-gradient(60% 50% at 80% 40%,rgba(124,58,237,.35),transparent),var(--deep)}
+.hg{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+.pill{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--line);border-radius:99px;padding:6px 16px;font-size:12px;font-weight:800;letter-spacing:.14em;margin-bottom:22px;color:var(--mut)}
+.pill:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--gl)}
+.lead{font-size:clamp(17px,2vw,22px);color:var(--mut);max-width:30em;margin:26px 0 34px}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+.mock{position:relative;height:420px}
+.bw{position:absolute;right:0;top:40px;width:92%;background:#fff;border-radius:18px;padding:16px;color:var(--ink);box-shadow:0 30px 60px rgba(0,0,0,.4);transform:rotate(-3deg);animation:fl 6s ease-in-out infinite}
+.bw .u{background:#e9e1ff;border-radius:99px;padding:5px 14px;font-size:12px;margin-bottom:22px}
+.bw h4{font:400 clamp(22px,3vw,34px)/1 var(--h);text-transform:uppercase}
+.bw .bar{height:8px;border-radius:9px;background:#d9ccff;margin:12px 0;width:70%}
+.bw .gr{height:110px;border-radius:14px;background:linear-gradient(135deg,#7c3aed,#22d3ee);margin-top:14px}
+.ph{position:absolute;left:0;bottom:0;width:130px;height:230px;border-radius:26px;background:#fff;border:6px solid var(--ink);padding:16px 12px;color:var(--ink);animation:fl 5s ease-in-out infinite reverse}
+.ph b{font:400 17px/1 var(--h);display:block;text-transform:uppercase}.ph i{display:block;margin-top:14px;height:54px;border-radius:12px;background:linear-gradient(135deg,#7c3aed,#22d3ee)}
+.ok{position:absolute;right:6px;bottom:20px;background:#fff;color:var(--ink);font-weight:800;padding:12px 20px;border-radius:99px;box-shadow:0 14px 30px rgba(0,0,0,.35);animation:fl 7s ease-in-out infinite}
+@keyframes fl{50%{translate:0 -12px}}
+.mq{background:var(--g);overflow:hidden;white-space:nowrap;padding:26px 0}
+.mq div{display:inline-block;animation:mq 28s linear infinite;font:400 clamp(30px,4vw,52px) var(--h);text-transform:uppercase}
+.mq span{margin:0 28px;color:var(--gl)}
+@keyframes mq{to{transform:translateX(-50%)}}
+.sec{padding:110px 0}.light{background:var(--cream);color:var(--ink)}.light .mt{color:var(--mutd)}.mt{color:var(--mut)}
+.top{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:50px}
+.top p{max-width:22em}
+.sv{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid #d8cff2;border-radius:32px;overflow:hidden}
+.sv a{padding:34px;border-right:1px solid #d8cff2;border-bottom:1px solid #d8cff2;display:block;transition:background .3s;position:relative}
+.sv a:nth-child(3n){border-right:0}.sv a:nth-child(n+4){border-bottom:0}
+.sv a:hover{color:#fff}
+.sv i{font-style:normal;color:var(--g);font:400 40px var(--h);display:block;margin-bottom:46px}
+.sv h3{margin-bottom:12px}.sv span{position:absolute;right:28px;top:30px;width:40px;height:40px;border:1px solid #d8cff2;border-radius:50%;display:grid;place-items:center;transition:.3s}
+.sv a:hover span{background:#fff;color:var(--ink);border-color:#fff;transform:rotate(45deg)}
+.pj{border-top:1px solid var(--line);padding-top:20px}
+.pj .m{display:flex;justify-content:space-between;color:var(--mut);font-weight:600;margin-bottom:18px}.pj .m b{color:var(--gl)}
+.shot{border-radius:26px;overflow:hidden;border:1px solid var(--line);background:#1c1236}
+.shot .bar{padding:14px 20px;display:flex;gap:10px;align-items:center;font-size:14px}.shot .bar span{background:rgba(255,255,255,.1);padding:6px 16px;border-radius:99px}
+.shot .im{height:min(46vw,380px);background:linear-gradient(160deg,#5b21b6,#1e1b4b);display:grid;place-items:center;font:400 clamp(34px,6vw,72px) var(--h);text-transform:uppercase;text-align:center;padding:20px}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}.chips span{border:1px solid var(--line);border-radius:99px;padding:6px 16px;font-size:14px;font-weight:600;color:var(--mut)}
+.st{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;position:relative}
+.st:before{content:"";position:absolute;left:0;right:0;bottom:-36px;height:2px;background:#d8cff2}
+.st div b{display:block;font:400 clamp(70px,9vw,130px)/1 var(--h);color:var(--g)}.st h3{margin:6px 0}
+.tm{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;text-align:center;margin-top:20px}
+.av{width:min(220px,60%);aspect-ratio:1;margin:0 auto 18px;border-radius:50%;display:grid;place-items:center;font:400 72px var(--h);background:conic-gradient(from 90deg,#ff9f1c,#e5097f,#3ad6ff,#ff9f1c);position:relative}
+.av:after{content:"";position:absolute;inset:7px;border-radius:50%;background:#1a1033}.av span{position:relative;z-index:1}
+.wy{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}
+.wy div{padding:40px 0;border-bottom:1px solid var(--line)}.wy div:nth-child(odd){border-right:1px solid var(--line);padding-right:30px}.wy div:nth-child(even){padding-left:40px}
+.wy h3{font-size:clamp(40px,6vw,80px);color:#fff;margin-bottom:10px}
+details{border-top:1px solid #d8cff2;padding:22px 0;max-width:760px}details:last-of-type{border-bottom:1px solid #d8cff2}
+summary{cursor:pointer;font-weight:800;font-size:19px;list-style:none;display:flex;justify-content:space-between}summary:after{content:"+";color:var(--g)}details[open] summary:after{content:"–"}
+details p{margin-top:12px;color:var(--mutd)}
+.bl{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.bl article{border:1px solid #d8cff2;border-radius:24px;padding:28px;background:#fff}.bl small{color:var(--g);font-weight:800;letter-spacing:.1em}.bl h3{margin:12px 0}
+form{display:grid;gap:16px;max-width:640px}label{display:grid;gap:6px;font-size:13px;font-weight:600;color:var(--mut)}
+input,select,textarea{background:#1c1236;border:1px solid var(--line);color:var(--cream);border-radius:14px;padding:14px;font:inherit}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gl)}.er{color:#ffb4a8;font-size:12px;min-height:14px}
+#nt{display:none;padding:14px 18px;border-radius:14px;background:rgba(34,211,238,.15);border:1px solid var(--gl)}
+.cta{background:var(--g);text-align:center;padding:90px 0}.cta .btn{background:#fff;color:var(--ink);margin-top:28px}.cta .btn b{background:var(--ink);color:#fff}
+footer{background:#070412;padding:50px 0 40px;color:var(--mut);font-size:14px}.fg{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}.fg a:hover{color:#fff}
+@media(max-width:860px){.hg{grid-template-columns:1fr}.mock{height:360px}.sv,.bl,.tm,.st{grid-template-columns:1fr}.sv a{border-right:0!important;border-bottom:1px solid #d8cff2!important}.sv a:last-child{border-bottom:0!important}.st:before{display:none}.wy{grid-template-columns:1fr}.wy div:nth-child(n){border-right:0;padding:30px 0}
+#mb{display:block}.nl{display:none;position:absolute;top:70px;left:0;right:0;flex-direction:column;background:var(--deep);border:1px solid var(--line);border-radius:24px;padding:14px}.nl.o{display:flex}.nc{display:none}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+body.cc,body.cc *{cursor:none!important}body.cc input,body.cc textarea{cursor:text!important}
+#cur{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:200}
+.hero{position:relative;overflow:hidden}.hero .w{position:relative;z-index:1}
+.hero:before,.hero:after{content:"";position:absolute;width:42vw;height:42vw;border-radius:50%;filter:blur(90px);opacity:.5;animation:orb 14s ease-in-out infinite alternate}
+.hero:before{background:#7c3aed;left:-10vw;top:-10vw}.hero:after{background:#db2777;right:-8vw;bottom:-14vw;animation-delay:-6s;opacity:.35}
+@keyframes orb{to{translate:12vw 8vw}}
+.wd{display:inline-block;animation:wd .9s cubic-bezier(.2,.8,.2,1) both}
+@keyframes wd{from{opacity:0;transform:translateY(70%) rotate(5deg)}}
+.gr{background:linear-gradient(90deg,#a78bfa,#f472b6,#22d3ee,#a78bfa);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:gs 6s linear infinite}
+.cta,.mq{background:linear-gradient(110deg,#7c3aed,#db2777,#22d3ee,#7c3aed);background-size:300% 100%;animation:gs 10s linear infinite}
+@keyframes gs{to{background-position:300% 0}}
+.sv a:before{content:"";position:absolute;inset:0;background:radial-gradient(260px circle at var(--mx,50%) var(--my,50%),rgba(124,58,237,.2),transparent 60%);opacity:0;transition:opacity .3s}
+.sv a:hover:before{opacity:1}
+.lg i{animation:pu 3s ease-in-out infinite}@keyframes pu{50%{box-shadow:0 0 22px #7c3aed}}
+#wp{position:fixed;inset:0;z-index:150;pointer-events:none;background:linear-gradient(135deg,#7c3aed,#db2777,#22d3ee);transform:translateY(100%)}
+#wp.go{animation:wp 1.1s cubic-bezier(.7,0,.2,1)}
+.wl{position:absolute;inset:0;display:grid;place-content:center;justify-items:center;gap:16px;color:#fff;opacity:0}
+.wl i{width:88px;height:88px;border-radius:24px;background:#1a1033;color:#ffd166;font:400 52px var(--h);font-style:normal;display:grid;place-items:center;box-shadow:0 0 50px rgba(255,255,255,.35)}
+.wl b{font:400 clamp(30px,6vw,56px) var(--h);letter-spacing:.22em;padding-left:.22em}
+#wp.go .wl{animation:wl 1.1s ease both}
+@keyframes wl{0%,30%{opacity:0;transform:scale(.6) rotate(-12deg)}45%,60%{opacity:1;transform:none}85%,100%{opacity:0;transform:scale(1.2)}}
+@keyframes wp{0%{transform:translateY(100%)}45%,55%{transform:none}100%{transform:translateY(-100%)}}
+main .rv{opacity:0;transform:translateY(40px);transition:opacity .8s,transform .8s,background .3s}
+main .rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){main .rv{opacity:1!important;transform:none!important}#wp{display:none}}
+#sp{position:fixed;top:0;left:0;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,#7c3aed,#db2777,#22d3ee);z-index:160}
+.btn{position:relative;overflow:hidden}
+.btn:after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.35),transparent);transform:skewX(-20deg);animation:sh 3.5s ease-in-out infinite}
+@keyframes sh{60%,100%{left:130%}}
+.nl a{transition:background .3s,color .3s,transform .3s}.nl a:hover{transform:translateY(-2px)}
+.bl article{transition:box-shadow .3s,border-color .3s,background .3s}.bl article:hover{box-shadow:0 20px 50px rgba(124,58,237,.25);border-color:#7c3aed}
+.av{transition:transform .8s cubic-bezier(.2,.8,.2,1)}.tm>div:hover .av{transform:rotate(360deg) scale(1.06)}
+.wy h3{transition:letter-spacing .4s,color .4s}.wy div:hover h3{letter-spacing:.06em;color:#22d3ee}
+.st b{transition:transform .4s}.st div:hover b{transform:translateY(-8px) scale(1.04)}
+main .sv a.rv{transition:opacity .8s,transform .8s,background .35s,color .35s}
+.sv a{padding-bottom:78px}
+.sv a i,.sv a h3{transition:color .35s}
+.sv a:hover i,.sv a:hover h3{color:#fff}
+.sv a:hover .mt{color:rgba(255,255,255,.92)}
+.sv a:hover:before{background:radial-gradient(260px circle at var(--mx,50%) var(--my,50%),rgba(255,255,255,.2),transparent 60%)}
+.tk{position:absolute;left:34px;bottom:28px;font-style:normal;font-weight:800;text-decoration:underline;text-underline-offset:6px;opacity:0;transform:translateY(12px);transition:opacity .4s,transform .4s}
+.sv a:hover .tk{opacity:1;transform:none}
+.btn.o:hover{background:var(--g);border-color:var(--g)}
+.sv a:before{background:var(--g);opacity:1;z-index:0;clip-path:circle(0 at var(--mx,50%) var(--my,50%));transition:clip-path .75s cubic-bezier(.2,.8,.2,1)}
+.sv a:hover:before{background:var(--g);opacity:1;clip-path:circle(150% at var(--mx,50%) var(--my,50%))}
+.sv a:after{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background:radial-gradient(260px circle at var(--sx,50%) var(--sy,50%),rgba(255,255,255,.22),transparent 60%);opacity:0;transition:opacity .5s}
+.sv a:hover:after{opacity:1}
+.sv a i,.sv a h3,.sv a p{position:relative;z-index:1}
+.sv a span,.sv a .tk{z-index:1}
+.sv a i,.sv a h3,.sv a .mt{transition:color .4s .15s}
+.sv a span{transition:.45s .12s}
+.sv a:hover .tk{transition-delay:.25s}
+@media(prefers-reduced-motion:reduce){.sv a:before,.sv a:after{transition:none}}
+
+.ad{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.ad div{background:#1c1236;border:1px solid var(--line);border-radius:20px;padding:24px}.ad b{font:400 clamp(36px,5vw,56px) var(--h);display:block;color:#fff}.ad small{color:var(--mut)}
+.bars{display:flex;align-items:flex-end;gap:8px;height:190px;padding-top:26px;margin-top:10px}.bars i{flex:1;background:linear-gradient(#22d3ee,#7c3aed);border-radius:6px 6px 0 0;position:relative;transition:height .8s}.bars i span{position:absolute;top:-22px;left:0;right:0;text-align:center;font:600 12px var(--b);color:var(--mut)}
+.ag{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:50px}.rw{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--line)}.rw b{color:#fff}
+@media(max-width:860px){.ad{grid-template-columns:1fr 1fr}.ag{grid-template-columns:1fr}}
+.nl a{padding:9px 12px}
+.dt{display:grid;grid-template-columns:1fr 1.1fr;gap:40px;padding:44px 0;border-top:1px solid #d8cff2}
+.dt i{font:400 40px var(--h);font-style:normal;color:var(--g);display:block;margin-bottom:14px}
+.dt ul{list-style:none;padding:0}.dt li{position:relative;padding:8px 0 8px 28px}.dt li:before{content:"✓";position:absolute;left:0;color:var(--g);font-weight:800}
+.cd{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.cd>div{border:1px solid var(--line);border-radius:22px;padding:28px;background:#1c1236}.cd h3{font-size:26px;margin-bottom:10px}.cd p{color:var(--mut)}
+.light .cd>div{background:#fff;border-color:#d8cff2}.light .cd p{color:var(--mutd)}
+.cd a{color:var(--gl);font-weight:700;text-decoration:underline;text-underline-offset:4px}
+@media(max-width:860px){.dt{grid-template-columns:1fr;gap:18px}}
+#fl{display:flex;flex-wrap:wrap;gap:8px 18px;max-width:100%}#fl a{margin:0!important}
+.fg>div{min-width:0}
+header,nav{max-width:100%}
+#sph{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+body:after{content:"";position:fixed;inset:-50%;pointer-events:none;z-index:170;opacity:.09;background-image:url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");animation:gr 1s steps(4) infinite}
+@keyframes gr{25%{transform:translate(-3%,2%)}50%{transform:translate(2%,-3%)}75%{transform:translate(-2%,-2%)}}
+.cd>div,.ad div{background:rgba(255,255,255,.06);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:inset 0 1px 0 rgba(255,255,255,.12);transition:border-color .3s,box-shadow .3s}
+.light .cd>div{background:rgba(255,255,255,.75)}
+.cd>div:hover{border-color:#7c3aed;box-shadow:0 20px 50px rgba(124,58,237,.25),inset 0 1px 0 rgba(255,255,255,.15)}
+a.shot{display:block}.shot .im{transition:transform .9s cubic-bezier(.2,.8,.2,1)}.shot:hover .im{transform:scale(1.06)}
+.pin{position:relative;height:400vh}
+.pin-in{position:sticky;top:0;height:100svh;display:flex;flex-direction:column;justify-content:center;gap:40px;padding-top:70px;overflow:hidden}
+.pg{display:grid;grid-template-columns:auto 1fr;gap:60px;align-items:center}
+.pg b{font:400 clamp(110px,22vw,320px)/1 var(--h);background:linear-gradient(135deg,#a78bfa,#f472b6,#22d3ee);-webkit-background-clip:text;background-clip:text;color:transparent}
+.pc{position:relative;min-height:240px}
+.ps{position:absolute;left:0;right:0;top:50%;transform:translateY(-30%);opacity:0;transition:opacity .6s,transform .6s}
+.ps.on{opacity:1;transform:translateY(-50%)}
+.ps h2{margin-bottom:14px}.ps p{color:var(--mut);font-size:clamp(17px,2vw,22px);max-width:24em}
+.pbw{height:3px;background:var(--line);border-radius:3px;overflow:hidden}
+.pbw i{display:block;height:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,#7c3aed,#db2777,#22d3ee)}
+#wa{position:fixed;right:max(20px,env(safe-area-inset-right,0px));bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:55;display:flex;align-items:center;gap:0;height:58px;min-width:58px;padding:0 15px;border-radius:99px;background:#25d366;color:#fff;font-weight:800;font-size:14px;box-shadow:0 12px 30px rgba(37,211,102,.4);isolation:isolate;transition:transform .3s}
+#wa span{max-width:0;overflow:hidden;white-space:nowrap;transition:max-width .4s,margin .4s}
+#wa:hover span,#wa:focus-visible span{max-width:170px;margin-left:10px}
+#wa:hover{transform:translateY(-3px)}
+#wa:before{content:"";position:absolute;inset:0;border-radius:99px;background:#25d366;z-index:-1;animation:wpl 2.4s ease-out infinite}
+@keyframes wpl{to{transform:scale(1.5);opacity:0}}
+@media(max-width:860px){#sph{opacity:.5}.pin{height:340vh}.pg{grid-template-columns:1fr;gap:0}.pg b{font-size:34vw}}
+@media(prefers-reduced-motion:reduce){body:after,#wa:before{animation:none}}
+.sp .wm{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.12em;margin-bottom:-.12em}
+.sp .wi{display:inline-block;transform:translateY(118%) rotate(5deg);transition:transform .9s cubic-bezier(.2,.8,.2,1)}
+.sp.in .wi{transform:none}
+.cd>div,.bl article,.ad div{position:relative;overflow:hidden}
+.cd>div:after,.bl article:after,.ad div:after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(240px circle at var(--gx,50%) var(--gy,50%),rgba(255,255,255,.16),transparent 60%);opacity:0;transition:opacity .3s}
+.light .cd>div:after,.bl article:after{background:radial-gradient(240px circle at var(--gx,50%) var(--gy,50%),rgba(124,58,237,.14),transparent 60%)}
+.cd>div:hover:after,.bl article:hover:after,.ad div:hover:after{opacity:1}
+.rt{display:inline-block;position:relative;overflow:hidden;vertical-align:middle;line-height:1.3}
+.rt>span{display:block;transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.rt:after{content:attr(data-t);position:absolute;left:0;top:100%;white-space:nowrap;transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.btn:hover .rt>span,.btn:hover .rt:after{transform:translateY(-100%)}
+.hs{position:relative}
+.hs-in{position:sticky;top:0;height:100svh;overflow:hidden;display:flex;align-items:center}
+.hs-track{display:flex;will-change:transform}
+.hp{flex:0 0 100vw;padding:90px 8vw 50px;display:flex;align-items:center}
+.hp0 h2,.hp2 h2{font-size:clamp(48px,8vw,120px);max-width:9em}
+.hp-card{width:min(1100px,84vw)}
+.hs .shot .im{height:22vh;font-size:clamp(26px,3.6vw,52px)}.hs .pj .m{display:none}.hs .pj h2{font-size:clamp(34px,4.5vw,64px)}.hs .pj .chips{margin:12px 0}.hs .pj p.mt{font-size:15px}
+.hs .pj{border-top:0;padding-top:0}
+.hs-bar{position:absolute;left:8vw;right:8vw;bottom:30px;height:3px;background:var(--line);border-radius:3px;overflow:hidden}
+.hs-bar i{display:block;height:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,#7c3aed,#db2777,#22d3ee)}
+@media(max-width:860px){.hs-in{position:static;height:auto;overflow:visible;display:block}.hs-track{display:block;transform:none!important}.hp{flex:none;padding:60px 24px;display:block}.hp:first-child{padding-top:130px}.hs-bar{display:none}.hp-card{width:100%}.hs .shot .im{height:min(46vw,300px)}}
+.pr{display:block;margin-top:16px;font-weight:800;color:var(--g)}small.pr{font-size:15px}.dt .pr{font-size:24px;margin:16px 0 0}.sv a .pr{position:relative;z-index:1;transition:color .4s .15s}.sv a:hover .pr{color:#fff}
+</style>
+
+
+</head>
+<body>
+<header><div class="w"><nav aria-label="Main">
+<a class="lg" href="#/home"><i>V</i>VEYQORA</a>
+<div class="nl" id="nl"></div>
+<a class="btn nc" href="#/contact">Start a Project <b>→</b></a>
+<button id="mb" aria-expanded="false" aria-controls="nl">Menu</button>
+</nav></div></header>
+<div id="sp"></div><div id="wp"><div class="wl"><i>V</i><b>VEYQORA</b></div></div><main id="app"></main>
+<footer><div class="w fg"><div><b style="color:#fff;letter-spacing:.06em">VEYQORA</b><br>Pratap Nagar, Jaipur, Rajasthan<br><a href="mailto:provansh.2012@gmail.com">provansh.2012@gmail.com</a> · <a href="tel:+918824729508">+91 88247 29508</a><br>© 2026 Veyqora</div><div id="fl"></div></div></footer>
+
+<script>
+(function(){
+var EMAIL="provansh.2012@gmail.com",WA="918824729508",PHONE="+91 88247 29508",GA_ID="",GC_CODE=""; // paste your Google Analytics ID here, e.g. G-XXXXXXXXXX
+var NAV=[["home","Home"],["services","Services"],["work","Work"],["process","Process"],["blog","Blog"],["about","About"],["contact","Contact"],["admin","Admin"]];
+// Starting prices (INR). Change these to your real prices.
+var PRICES={"Website Development":"From ₹7,999 · one-time","Digital Marketing":"From ₹8,000 · per month","SEO":"From ₹6,000 · per month","Social Media":"From ₹5,000 · per month","Video Editing":"From ₹500 · per video","Graphic Design":"From ₹199 · per design"};
+var SV=[["Website Development","Business websites, landing pages and modern UI/UX design — responsive, fast and easy to manage."],["Digital Marketing","Practical strategies to build and promote your online presence and reach more customers."],["SEO","Search visibility and website optimization, including local SEO for Jaipur businesses. No ranking guarantees."],["Social Media","Content, strategy and management to keep your brand active and consistent."],["Video Editing","Reels, promotional videos and short-form content edited for social media and ads."],["Graphic Design","Social creatives, advertisements and brand visuals that keep your look consistent."]];
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+var mq=function(){var t=["Website Development","Digital Marketing","SEO","Social Media","Video Editing","Graphic Design"],s="";for(var k=0;k<4;k++)t.forEach(function(x){s+=x+"<span>✦</span>"});return'<div class="mq" aria-hidden="true"><div>'+s+'</div></div>'};
+var cta='<section class="cta"><div class="w"><h2>Have a project in mind?</h2><p style="margin-top:14px;opacity:.85">Tell us what you need — we reply with a clear plan.</p><a class="btn" href="#/contact">Start a Project <b>→</b></a></div></section>';
+var head=function(t,p,dark){return'<div class="top"><h2>'+t+'</h2><p class="mt">'+p+'</p></div>'};
+var svGrid=function(){return'<div class="sv">'+SV.map(function(s,i){return'<a href="#/contact?s='+encodeURIComponent(s[0])+'"><span>↗</span><i>0'+(i+1)+'</i><h3>'+s[0]+'</h3><p class="mt">'+s[1]+'</p><small class="pr">'+(PRICES[s[0]]||"")+'</small><em class="tk">Talk to us ↗</em></a>'}).join("")+'</div>'};
+var faq='<details><summary>What services does Veyqora offer?</summary><p>Website development, SEO, social media marketing, video editing and graphic design.</p></details><details><summary>Where is Veyqora located and who do you work with?</summary><p>We are based in Pratap Nagar, Jaipur and work with businesses in Jaipur and surrounding areas.</p></details><details><summary>How much does a website cost?</summary><p>It depends on the number of pages and features. Share your requirements and we will send a clear quote.</p></details><details><summary>How long does it take to build a website?</summary><p>Small business sites are typically a few weeks; timelines are agreed before we start.</p></details>';
+var P={
+home:function(){return'<section class="hero"><div class="w hg"><div><span class="pill">DIGITAL GROWTH AGENCY</span><h1>Digital marketing &amp; website development agency in Jaipur.</h1><p class="lead">We build digital experiences that move brands forward — websites, SEO, social media and creative work for businesses in Jaipur.</p><div class="row"><a class="btn" href="#/contact">Start a Project <b>↗</b></a><a class="btn o" href="#/work">Explore Our Work <b>↓</b></a></div></div><div class="mock" aria-hidden="true"><div class="bw"><div class="u">yourbrand.com</div><h4>Grow your brand online.</h4><div class="bar"></div><div class="gr"></div></div><div class="ph"><b>Grow your brand online.</b><i></i></div><div class="ok">✓ Site published</div></div></div></section>'+mq()+'<section class="sec light"><div class="w">'+head("Everything you need to grow online.","")+svGrid()+'<p style="margin-top:30px"><a class="btn" href="#/services">All services <b>→</b></a></p></div></section><section class="sec"><div class="w">'+head("Selected work","A look at some of the digital work we have created.")+workCard()+'</div></section>'+cta},
+services:function(){return'<section class="sec light" style="padding-top:150px"><div class="w">'+head("Our services","Pick one service or combine them into a single growth plan.")+svGrid()+'</div></section>'+cta},
+work:function(){return'<section class="sec" style="padding-top:150px"><div class="w">'+head("Selected work","A look at some of the digital work we have created.")+workCard()+'<p class="mt" style="margin-top:40px">More projects coming soon — add yours to the PROJECTS list in the code.</p></div></section>'+cta},
+process:function(){var s=[["Discover","Understand the business and objective."],["Strategy","Plan the right digital direction."],["Create","Design, develop and build."],["Launch","Deliver, refine and support."]];return'<section class="sec light" style="padding-top:150px"><div class="w">'+head("From idea to launch.","")+'<div class="st">'+s.map(function(x,i){return'<div><b>0'+(i+1)+'</b><h3>'+x[0]+'</h3><p class="mt">'+x[1]+'</p></div>'}).join("")+'</div><div style="height:50px"></div></div></section>'+cta},
+blog:function(){var b=[["SEO","What local SEO means for a Jaipur business","Google Business Profile, local keywords and reviews — where to start."],["Websites","5 things every small business website needs","Clear services, fast loading, mobile layout, contact options and trust signals."],["Social","Planning a month of social content","A simple weekly rhythm that keeps your brand active without burning out."]];return'<section class="sec light" style="padding-top:150px"><div class="w">'+head("Blog","Sample articles — replace with your own posts.")+'<div class="bl">'+b.map(function(x){return'<article><small>'+x[0].toUpperCase()+' · DEMO</small><h3>'+x[1]+'</h3><p class="mt">'+x[2]+'</p></article>'}).join("")+'</div></div></section>'+cta},
+about:function(){var t=[["Vansh","Web Development"],["Rohit","SEO"],["Yash","Team Member"]];return'<section class="sec light" style="padding-top:150px"><div class="w"><div class="top"><h2>Not just another agency. We\'re building Veyqora one project at a time.</h2><p class="mt">Based in Pratap Nagar, Jaipur, our small team handles website development, SEO, social media marketing, video editing and graphic design for businesses in Jaipur and surrounding areas.</p></div></div></section><section class="sec"><div class="w">'+head("Why Veyqora?","")+'<div class="wy"><div><h3>Modern</h3><p class="mt">Contemporary websites and creative design.</p></div><div><h3>Personal</h3><p class="mt">Direct communication and personalized solutions.</p></div><div><h3>Fast</h3><p class="mt">Focused workflow without unnecessary delays.</p></div><div><h3>Affordable</h3><p class="mt">Professional digital services built for growing businesses.</p></div></div></div></section><section class="sec light"><div class="w">'+head("The people behind Veyqora","A small team you can talk to directly.")+'<div class="tm">'+t.map(function(x){return'<div><div class="av"><span style="color:#ffd166">'+x[0][0]+'</span></div><h3>'+x[0]+'</h3><p class="mt">'+x[1]+'</p></div>'}).join("")+'</div></div></section><section class="sec light" style="padding-top:0"><div class="w">'+head("Questions, answered.","Straight answers about working with Veyqora.")+faq+'</div></section>'+cta},
+admin:function(){return'<section class="sec" style="padding-top:150px"><div class="w"><div id="adm"><p class="mt">Loading…</p></div></div></section>'},contact:function(q){var o=SV.map(function(s){return'<option'+(s[0]===q?' selected':'')+'>'+s[0]+'</option>'}).join("");return'<section class="sec" style="padding-top:150px"><div class="w">'+head("Start a project","Tell us what you need. We\'ll get back with a plan.")+'<form id="f" novalidate><label>Full name<input name="n" autocomplete="name"><span class="er"></span></label><label>Email<input name="e" type="email" autocomplete="email"><span class="er"></span></label><label>Phone (optional)<input name="p" type="tel" autocomplete="tel"></label><label>Service<select name="s">'+o+'</select></label><label>Project details<textarea name="m" rows="5"></textarea><span class="er"></span></label><div class="row"><button class="btn" type="submit">Send by email <b>→</b></button><button class="btn o" type="button" id="wa">WhatsApp <b>↗</b></button></div><div id="nt" role="status"></div></form></div></section>'}
+};
+function workCard(){return'<div class="pj"><div class="m"><span>Project 01</span><b>Web Development</b></div><a class="shot" data-cur="View" href="https://kktourandtravels.online" target="_blank" rel="noopener" aria-label="Visit KK Tour and Travels website"><div class="bar"><span>kktourandtravels.online</span></div><div class="im">Exclusive taxi service<br>in Jaipur</div></a><div style="display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;margin-top:28px;align-items:flex-end"><h2>KK Tour &amp; Travels</h2><div style="max-width:30em"><p class="mt">A modern, responsive website for a Jaipur-based taxi service — clear service listings, booking calls-to-action and contact details, built to work beautifully on mobile.</p><div class="chips"><span>6 pages</span><span>HTML · CSS · JavaScript</span><span>2026</span></div><a class="btn" href="https://kktourandtravels.online" target="_blank" rel="noopener">Visit site <b>↗</b></a></div></div></div>'}
+function ulist(a){return'<ul>'+a.map(function(x){return'<li>'+x+'</li>'}).join("")+'</ul>'}
+function cards(a){return'<div class="cd">'+a.map(function(x){return'<div><h3>'+x[0]+'</h3><p>'+x[1]+'</p></div>'}).join("")+'</div>'}
+function add(k,fn,before){var o=P[k];P[k]=function(q){var h=o(q),x=fn();return before?h.replace(cta,function(){return x+cta}):h+x}}
+var SD=[
+["Website Development","Your website is your shop window. We design and build fast, mobile-friendly websites that explain what you do and make it easy for customers to contact you.",["Custom responsive design for phone, tablet and desktop","Clear service pages, gallery and contact sections","Call, WhatsApp and enquiry buttons","Basic on-page SEO and fast loading","Guidance on domain and hosting"],"Shops, clinics, travel and taxi services, coaching, local businesses"],
+["Digital Marketing","A simple, practical plan to get your business in front of the right people online, without wasting budget on guesswork.",["Goal and audience planning","Google Business Profile setup and cleanup","Ad campaign setup with conversion tracking","Offers and landing page suggestions","Plain-language monthly summary"],"Businesses that want more local enquiries and calls"],
+["SEO","Make it easier for people in Jaipur and nearby areas to find you on Google. SEO takes time and we never promise rankings, only steady, honest work.",["Website and technical audit","Keyword research for your services and area","On-page fixes: titles, headings, content, speed","Local SEO and Google Business Profile","Simple content plan and progress notes"],"Businesses that depend on people searching nearby"],
+["Social Media","Stay active and consistent without spending every day on it. We plan, design and post content that fits your brand.",["Monthly content calendar","Post designs and captions","Reels ideas and scheduling","Replying to comments and messages on request","Monthly review of what worked"],"Brands that want a steady presence on Instagram and Facebook"],
+["Video Editing","Short, clean videos made for phones. We edit your raw footage into reels, promos and ads that are ready to post.",["Reels and short-form edits","Promotional and product videos","Subtitles, music and transitions","Brand colors, logo and intro or outro","Formats for Instagram, YouTube and ads"],"Creators, shops, restaurants and service businesses"],
+["Graphic Design","Visuals that keep your brand looking consistent everywhere, from social posts to printed material.",["Social media creatives and templates","Advertisement and offer banners","Posters, flyers and brand visuals","Consistent colors and fonts across everything","Files ready for print and online use"],"Anyone who needs a professional, consistent look"]];
+add("services",function(){return'<section class="sec light" style="padding-top:0"><div class="w">'+SD.map(function(d,i){return'<div class="dt"><div><i>0'+(i+1)+'</i><h3>'+d[0]+'</h3><p class="mt">'+d[1]+'</p><p class="pr">'+(PRICES[d[0]]||"")+'</p><p style="margin-top:14px;font-weight:700">Best for: <span class="mt" style="font-weight:400">'+d[3]+'</span></p></div><div><p style="font-weight:800;margin-bottom:6px">What is included</p>'+ulist(d[2])+'<a class="btn" style="margin-top:22px" href="#/contact?s='+encodeURIComponent(d[0])+'">Ask about this <b>→</b></a></div></div>'}).join("")+'</div></section><section class="sec light" style="padding-top:0"><div class="w">'+head("How pricing works.","Prices shown are starting prices in INR. Your final quote depends on pages, features and goals.")+cards([["Clear written quote","Tell us your goals and we send a written quote before any work begins."],["One-time or monthly","Websites and design are usually one-time. SEO, social media and marketing are monthly."],["Talk directly","Questions about scope or budget go straight to the team, on call or WhatsApp."]])+'</div></section>'},true);
+add("home",function(){return'<section class="sec light"><div class="w">'+head("Built around your business.","What you can expect when you work with us.")+cards([["Clear plan first","We start by understanding your business, customers and goals before anything is designed."],["Mobile-first builds","Most local customers browse on phones, so every page is designed for small screens first."],["Direct communication","You talk to the people doing the work, with quick replies on call or WhatsApp."],["Support after launch","We stay available to fix, update and improve after your project goes live."]])+'</div></section><section class="sec light" style="padding-top:0"><div class="w">'+head("Questions, answered.","Straight answers about working with Veyqora.")+faq+'</div></section>'},true);
+add("work",function(){return'<section class="sec"><div class="w">'+head("Inside the project.","What went into KK Tour and Travels.")+cards([["The goal","Give a Jaipur taxi service a professional online presence where customers can see services and get in touch quickly."],["What we built","A six-page website with service listings, booking calls-to-action and clear contact details."],["Built for mobile","Layouts designed to work well on phone screens, where most local travel searches happen."],["Technology","Hand-coded with HTML, CSS and JavaScript, keeping the site light and fast to load."]])+'</div></section><section class="sec" style="padding-top:0"><div class="w">'+head("What a typical project includes.","")+'<div class="dt" style="border-color:var(--line)"><div><i>→</i><p class="mt">Every website we build follows the same careful steps, so you always know where things stand.</p></div><div>'+ulist(["Planning call and scope agreement","Page structure and design direction","Responsive build with your content","Review rounds with previews","Launch, domain connection and handover"])+'</div></div></div></section>'},true);
+add("process",function(){var S=[["Discover",["Talk through your business, customers and competitors","Define goals, pages and features","Agree scope and send a clear quote"],["Business details, services and prices","Examples of websites or brands you like","Your main goal for the project"]],["Strategy",["Plan the site structure and content outline","Choose design direction, colors and style","Suggest marketing channels where needed"],["Review and approve the plan","Share any content you already have"]],["Create",["Design and build the pages or creatives","Write or tidy up the content","Share previews as work progresses"],["Logo, photos and videos if available","Honest feedback on each preview"]],["Launch",["Final checks on phone and desktop","Connect domain and go live","Handover and basic training"],["Final approval","Access to domain and accounts when needed"]]];return'<section class="sec light" style="padding-top:0"><div class="w">'+S.map(function(x,i){return'<div class="dt"><div><i>0'+(i+1)+'</i><h3>'+x[0]+'</h3></div><div><p style="font-weight:800;margin-bottom:6px">What we do</p>'+ulist(x[1])+'<p style="font-weight:800;margin:18px 0 6px">What we need from you</p>'+ulist(x[2])+'</div></div>'}).join("")+'</div></section><section class="sec light" style="padding-top:0"><div class="w">'+head("Good to know.","")+cards([["Timelines","Small business sites usually take a few weeks. We agree dates with you before starting."],["Revisions","You see previews along the way, so changes are easy to make before launch."],["After launch","We stay available for fixes, updates and further marketing support."]])+'</div></section>'},true);
+add("blog",function(){var A=[["What local SEO means for a Jaipur business",["Local SEO helps people near you find your business when they search on Google, for example a service plus your city. It is different from general SEO because location matters.","Start with your Google Business Profile: correct name, address, phone number, hours, categories and real photos. Keep these details the same everywhere your business is listed.","Ask happy customers for reviews and reply to them. On your website, describe each service clearly and mention the areas you serve. Results take time and nobody can honestly guarantee rankings."]],["5 things every small business website needs",["1. A clear headline saying what you do and where. Visitors should understand this in a few seconds.","2. Easy contact: visible call and WhatsApp buttons on every page.","3. Fast, mobile-friendly pages, because most visitors are on phones.","4. Trust: real photos, reviews, your address and how long you have been working.","5. Clear services and next steps, so people know what to do after reading."]],["Planning a month of social content",["Pick three content themes, for example tips, behind the scenes and offers, so you never run out of ideas.","Plan posts for the whole month in one sitting and create content in batches. Aim for a rhythm you can keep, such as three or four posts a week plus a few reels.","Check what worked every week: saves, shares and messages matter more than likes. Do more of that and drop what is ignored."]]];return'<section class="sec light" style="padding-top:0"><div class="w"><h3 style="margin-bottom:24px">Read the articles</h3>'+A.map(function(a){return'<details><summary>'+a[0]+'</summary>'+a[1].map(function(p){return'<p>'+p+'</p>'}).join("")+'</details>'}).join("")+'<p class="mt" style="margin-top:24px;font-size:14px">Demo articles. Replace them with your own writing.</p></div></section>'},true);
+add("about",function(){return'<section class="sec"><div class="w">'+head("Our mission.","Make professional digital work affordable and understandable for local businesses.")+cards([["Be honest","We explain what will and will not work, and we never promise guaranteed rankings or overnight results."],["Keep it simple","Plain language, clear quotes and no jargon, so you always know what you are paying for."],["Do quality work","Every website, video and design gets the same careful attention, whatever the size of the project."],["Grow together","We are a young team that grows when our clients grow, so your success matters to us."]])+'<h3 style="margin:56px 0 20px">Who we work with</h3><div class="chips">'+["Local shops","Clinics and salons","Travel and taxi services","Restaurants and cafes","Coaching and education","Startups and creators"].map(function(x){return'<span>'+x+'</span>'}).join("")+'</div></div></section>'},true);
+add("contact",function(){return'<section class="sec" style="padding-top:0"><div class="w">'+head("Other ways to reach us.","Pick whatever is easiest for you.")+cards([["Email",'<a href="mailto:'+EMAIL+'">'+EMAIL+'</a>'],["Phone",'<a href="tel:+'+WA+'">'+PHONE+'</a>'],["WhatsApp",'<a href="https://wa.me/'+WA+'" target="_blank" rel="noopener">Chat with us</a>'],["Location","Pratap Nagar, Jaipur, Rajasthan"]])+'<h3 style="margin:56px 0 20px">What happens next</h3>'+cards([["1. We read your message","We look at your goals and what you need."],["2. We reply","You get questions or a clear quote, usually by email or WhatsApp."],["3. We get started","Once you approve the plan, work begins and you see progress along the way."]])+'</div></section><section class="sec light" style="padding-top:0"><div class="w">'+head("Questions, answered.","")+faq+'</div></section>'});
+var app=document.getElementById("app"),nl=document.getElementById("nl"),mb=document.getElementById("mb");
+function route(){var h=(location.hash||"#/home").slice(2).split("?"),r=P[h[0]]?h[0]:"home",q=decodeURIComponent((h[1]||"").replace("s=",""));
+ app.style.animation="none";app.offsetHeight;app.style.animation="";
+ app.innerHTML=P[r](q);window.scrollTo(0,0);post();
+ nl.innerHTML=NAV.map(function(n){return'<a href="#/'+n[0]+'"'+(n[0]===r?' class="on" aria-current="page"':'')+'>'+n[1]+'</a>'}).join("");
+ document.getElementById("fl").innerHTML=NAV.map(function(n){return'<a href="#/'+n[0]+'" style="margin-right:16px">'+n[1]+'</a>'}).join("");
+ nl.classList.remove("o");mb.setAttribute("aria-expanded","false");
+ document.title=(r==="home"?"Veyqora — Digital Marketing & Website Development, Jaipur":NAV.filter(function(n){return n[0]===r}).concat([[0,"Admin"]])[0][1]+" — Veyqora");
+ if(r==="contact")form();if(r==="admin")admin();track(r);sphere(r);pinInit();extras()}
+function form(){var f=document.getElementById("f"),nt=document.getElementById("nt");
+ function chk(){var d=f.elements,ok=true;f.querySelectorAll(".er").forEach(function(e){e.textContent=""});
+  function bad(el,m){ok=false;el.closest("label").querySelector(".er").textContent=m}
+  if(d.n.value.trim().length<2)bad(d.n,"Please enter your name.");
+  if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(d.e.value))bad(d.e,"Enter a valid email.");
+  if(d.m.value.trim().length<10)bad(d.m,"Add a little more detail.");
+  return ok?"Name: "+d.n.value+"\nEmail: "+d.e.value+"\nPhone: "+d.p.value+"\nService: "+d.s.value+"\n\n"+d.m.value:null}
+ function say(t){nt.style.display="block";nt.textContent=t}
+ f.addEventListener("submit",function(e){e.preventDefault();var m=chk();if(!m)return;lead(m,"email");say("Opening your email app…");location.href="mailto:"+EMAIL+"?subject="+encodeURIComponent("New project enquiry")+"&body="+encodeURIComponent(m)});
+ document.getElementById("wa").onclick=function(){var m=chk();if(!m)return;lead(m,"whatsapp");say("Opening WhatsApp…");window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(m),"_blank","noopener")}}
+mb.onclick=function(){var o=nl.classList.toggle("o");mb.setAttribute("aria-expanded",o)};
+var rm=matchMedia("(prefers-reduced-motion:reduce)").matches,first=true;
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var t=e.target;t.classList.add("in");io.unobserve(t);setTimeout(function(){t.style.transitionDelay=""},1300)}})},{threshold:.1});
+function post(){
+ var h=app.querySelector(".hero h1");
+ if(h){var ws=h.textContent.split(" ");h.setAttribute("aria-label",h.textContent);h.innerHTML=ws.map(function(w,i){return'<span class="wd'+(i>=ws.length-1?' gr':'')+'" aria-hidden="true" style="animation-delay:'+(i*.08+.1)+'s">'+esc(w)+'</span>'}).join(" ")}
+ app.querySelectorAll("h2,.sv a,.st>div,.wy>div,.bl article,.tm>div,.pj,.top p,.lead,.pill,.mock,details,form label,.cd>div,.dt").forEach(function(el,i){el.classList.add("rv");el.style.transitionDelay=(i%4)*.09+"s";io.observe(el)});
+ app.querySelectorAll(".btn").forEach(function(b){b.addEventListener("pointermove",function(e){var r=b.getBoundingClientRect();b.style.transform="translate("+(e.clientX-r.left-r.width/2)*.2+"px,"+(e.clientY-r.top-r.height/2)*.3+"px)"});b.addEventListener("pointerleave",function(){b.style.transform=""})});
+ app.querySelectorAll(".sv a").forEach(function(a){a.addEventListener("pointermove",function(e){var r=a.getBoundingClientRect();a.style.setProperty("--sx",e.clientX-r.left+"px");a.style.setProperty("--sy",e.clientY-r.top+"px")});["pointerenter","pointerleave"].forEach(function(n){a.addEventListener(n,function(e){var r=a.getBoundingClientRect();a.style.setProperty("--mx",e.clientX-r.left+"px");a.style.setProperty("--my",e.clientY-r.top+"px")})})})}
+function go(){var wp=document.getElementById("wp");if(rm){route();return}wp.classList.remove("go");void wp.offsetWidth;wp.classList.add("go");setTimeout(route,540)}
+if(!rm&&matchMedia("(pointer:fine)").matches){
+ document.body.classList.add("cc");
+ var cv=document.createElement("canvas");cv.id="cur";document.body.appendChild(cv);
+ var cx=cv.getContext("2d"),W,H,ps=[],mx=-100,my=-100,rx=-100,ry=-100,rr=18,hue=0,big=false,lbl="";
+ function rs(){W=cv.width=innerWidth;H=cv.height=innerHeight}rs();addEventListener("resize",rs);
+ addEventListener("pointermove",function(e){mx=e.clientX;my=e.clientY;for(var i=0;i<2;i++)ps.push({x:mx,y:my,vx:(Math.random()-.5)*1.6,vy:(Math.random()-.5)*1.6,l:1,s:Math.random()*5+3,h:hue+Math.random()*50});if(ps.length>300)ps.splice(0,ps.length-300)});
+ addEventListener("pointerdown",function(){for(var i=0;i<30;i++){var a=Math.random()*6.28,v=Math.random()*6+2;ps.push({x:mx,y:my,vx:Math.cos(a)*v,vy:Math.sin(a)*v,l:1,s:Math.random()*6+3,h:hue+Math.random()*140})}});
+ document.addEventListener("pointerover",function(e){big=!!(e.target.closest&&e.target.closest("a,button,summary,input,select,textarea"));var tg=e.target.closest?e.target.closest("[data-cur]"):null;lbl=tg?tg.getAttribute("data-cur"):""});
+ (function lp(){hue=(hue+2)%360;cx.clearRect(0,0,W,H);rx+=(mx-rx)*.18;ry+=(my-ry)*.18;rr+=((lbl?46:big?36:18)-rr)*.15;
+  ps=ps.filter(function(p){return p.l>0});
+  ps.forEach(function(p){p.x+=p.vx;p.y+=p.vy;p.l-=.025;cx.beginPath();cx.fillStyle="hsla("+p.h+",100%,60%,"+p.l*.85+")";cx.arc(p.x,p.y,Math.max(.1,p.s*p.l),0,6.28);cx.fill()});
+  cx.beginPath();cx.strokeStyle="hsl("+hue+",100%,65%)";cx.lineWidth=2;cx.arc(rx,ry,rr,0,6.28);cx.stroke();if(lbl){cx.beginPath();cx.fillStyle="hsla("+hue+",90%,45%,.92)";cx.arc(rx,ry,rr,0,6.28);cx.fill();cx.fillStyle="#fff";cx.font="800 13px Manrope,Arial,sans-serif";cx.textAlign="center";cx.textBaseline="middle";cx.fillText(lbl,rx,ry+1)}
+  cx.beginPath();cx.fillStyle="hsl("+hue+",100%,70%)";if(!lbl)cx.arc(mx,my,4,0,6.28);cx.fill();
+  requestAnimationFrame(lp)})();
+}
+var dbp=(window.claude&&window.claude.use)?Promise.all([window.claude.use("db"),window.claude.use("user")]).catch(function(){return[null,null]}):Promise.resolve([null,null]);
+if(GA_ID&&/^G-[A-Z0-9]+$/.test(GA_ID)){var gs=document.createElement("script");gs.async=true;gs.src="https://www.googletagmanager.com/gtag/js?id="+GA_ID;document.head.appendChild(gs);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};gtag("js",new Date());gtag("config",GA_ID,{send_page_view:false})}
+if(GC_CODE&&/^[a-z0-9-]+$/i.test(GC_CODE)){window.goatcounter={no_onload:true};var gc=document.createElement("script");gc.async=true;gc.setAttribute("data-goatcounter","https://"+GC_CODE+".goatcounter.com/count");gc.src="https://gc.zgo.at/count.js";document.head.appendChild(gc)}
+function gcCount(p,n){if(!GC_CODE)return;if(window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:"/"+p,title:p});else if(n<25)setTimeout(function(){gcCount(p,n+1)},300)}
+function track(p){if(p==="admin")return;gcCount(p,0);if(window.gtag)gtag("event","page_view",{page_title:p,page_path:"/"+p});dbp.then(function(a){var db=a[0],u=a[1];if(!db)return;Promise.resolve(u&&u.id?u.id():"").then(function(v){return db.collection("visits").add({t:Date.now(),p:p,v:String(v||"")})}).catch(function(){})})}
+function lead(m,ch){dbp.then(function(a){if(a[0])a[0].collection("leads").add({t:Date.now(),ch:ch,m:String(m).slice(0,1500)}).catch(function(){})})}
+function box(t,m){return'<h2>'+t+'</h2><p class="mt" style="max-width:34em;margin-top:16px">'+m+'</p>'}
+function note(){return'<p class="mt" style="margin-top:36px;max-width:46em;font-size:14px">Note: this dashboard counts visitors whose browser can reach the claude.ai tracker. For true public traffic once the site is hosted (for example on Netlify), add Google Analytics 4 or Plausible.</p>'}
+function ymd(t){return new Date(t-new Date().getTimezoneOffset()*6e4).toISOString().slice(0,10)}
+var HASH="33c27ea5389e98e73d8b718cc093c6434e74160d356b0b94b3642bcd46e2cf8a",fails=0,lockUntil=0;
+function sha(t){return crypto.subtle.digest("SHA-256",new TextEncoder().encode("elevara|"+t)).then(function(b){return Array.from(new Uint8Array(b)).map(function(x){return("0"+x.toString(16)).slice(-2)}).join("")})}
+function authed(){try{return sessionStorage.getItem("ea")==="1"}catch(e){return false}}
+function admin(){var el=document.getElementById("adm");
+ if(authed()){adminData(el);return}
+ el.innerHTML='<div style="min-height:60vh;display:grid;place-content:center;justify-items:center;text-align:center"><h2 style="margin:0 0 30px">Admin login</h2><form id="lf" novalidate style="width:min(420px,86vw);text-align:left"><label>Name<input name="n" autocomplete="username"></label><label>Password<input name="p" type="password" autocomplete="current-password"></label><span class="er" role="alert"></span><button class="btn" type="submit" style="justify-self:center">Log in <b>→</b></button></form></div>';
+ var lf=document.getElementById("lf");
+ lf.onsubmit=function(e){e.preventDefault();var er=el.querySelector(".er");
+  if(Date.now()<lockUntil){er.textContent="Too many attempts. Wait "+Math.ceil((lockUntil-Date.now())/1000)+"s.";return}
+  if(!window.crypto||!crypto.subtle){er.textContent="Login needs a secure (https) page.";return}
+  sha(lf.elements.n.value.trim().toUpperCase()+":"+lf.elements.p.value).then(function(h){
+   if(h===HASH){try{sessionStorage.setItem("ea","1")}catch(x){}adminData(el)}
+   else{fails++;if(fails>=5){lockUntil=Date.now()+3e4;fails=0}er.textContent="Wrong name or password."}})}}
+function gcGet(path){return fetch("https://"+GC_CODE+".goatcounter.com/counter/"+encodeURIComponent(path)+".json").then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(j){return{c:parseInt(String(j.count).replace(/\D/g,""),10)||0,u:parseInt(String(j.count_unique||0).replace(/\D/g,""),10)||0}})}
+function gcDash(el){var pgs=["home","services","work","process","blog","about","contact"],ks=["TOTAL"].concat(pgs.map(function(x){return"/"+x})),lo='<p><button class="btn o" id="lo">Log out <b>↗</b></button></p>';
+ el.innerHTML=lo+'<h2>Dashboard</h2><p class="mt" style="margin-top:14px">Loading…</p>';bindLo(el);
+ Promise.all(ks.map(function(k){return gcGet(k).catch(function(){return null})})).then(function(r){
+  if(!r[0]){el.innerHTML=lo+box("Could not load stats","Check that your GoatCounter code is correct and that Allow adding visitor counts on your website is turned on in its settings.");bindLo(el);return}
+  el.innerHTML=lo+'<h2>Dashboard</h2><p class="mt" style="margin:10px 0 34px">Live numbers from GoatCounter.</p><div class="ad"><div><b>'+r[0].c+'</b><small>Total page views</small></div><div><b>'+r[0].u+'</b><small>Unique visitors</small></div></div><div class="ag"><div><h3>Views per page</h3>'+pgs.map(function(k,i){return'<p class="rw"><span>'+k+'</span><b>'+(r[i+1]?r[i+1].c:0)+'</b></p>'}).join("")+'</div><div><h3>Daily and monthly charts</h3><p class="mt" style="margin-bottom:18px">Open the full dashboard for per-day and per-month graphs, countries, devices and sources.</p><a class="btn" href="https://'+GC_CODE+'.goatcounter.com" target="_blank" rel="noopener">Open GoatCounter <b>↗</b></a></div></div><div class="ag"><div><h3>Your contact details</h3><p class="rw"><span>Email</span><b>'+esc(EMAIL)+'</b></p><p class="rw"><span>Phone</span><b>'+esc(PHONE)+'</b></p></div></div>';bindLo(el)})}
+function bindLo(el){var b=el.querySelector("#lo");if(b)b.onclick=function(){try{sessionStorage.removeItem("ea")}catch(x){}admin()}}
+function adminData(el){if(GC_CODE){gcDash(el);return}
+ dbp.then(function(a){var db=a[0],u=a[1];
+  if(!db||!u){el.innerHTML=box("Analytics not connected",GA_ID?'Visitor stats for this site are in Google Analytics.<br><a class="btn" style="margin-top:20px" href="https://analytics.google.com/" target="_blank" rel="noopener">Open Google Analytics <b>↗</b></a>':"Built-in stats only work on the claude.ai version of this page. On your own hosting, create a free GoatCounter account and put its code in GC_CODE at the top of the script. Your visitor numbers will then show here.")+note();return}
+  if(!u.isOwner()){el.innerHTML=box("Access denied","Only the site owner can open this dashboard.");return}
+  Promise.all([db.collection("visits").orderBy("t","desc").limit(1000).get(),db.collection("leads").orderBy("t","desc").limit(20).get()]).then(function(r){
+   dash(el,r[0].docs.map(function(d){return d.data()}),r[1].docs.map(function(d){return d.data()}))
+  }).catch(function(e){el.innerHTML=box("Could not load data",esc(e&&e.message||"Please try again."))})})}
+function dash(el,V,L){var now=Date.now(),D=864e5,td=ymd(now),days=[],cnt={},pg={},uq={},v7=0,v30=0,vtd=0;
+ for(var i=13;i>=0;i--){var k=ymd(now-i*D);days.push(k);cnt[k]=0}
+ V.forEach(function(x){var a=now-x.t,k=ymd(x.t);if(k===td)vtd++;if(a<7*D)v7++;if(a<30*D){v30++;pg[x.p]=(pg[x.p]||0)+1;if(x.v)uq[x.v]=1}if(k in cnt)cnt[k]++});
+ var mx=Math.max.apply(null,days.map(function(k){return cnt[k]}).concat([1])),top=Object.keys(pg).sort(function(a,b){return pg[b]-pg[a]});
+ el.innerHTML='<p><button class="btn o" id="lo">Log out <b>↗</b></button></p><h2>Dashboard</h2><p class="mt" style="margin:10px 0 34px">'+V.length+' page views recorded in total (latest 1000 loaded).</p>'
+ +'<div class="ad"><div><b>'+vtd+'</b><small>Views today</small></div><div><b>'+v7+'</b><small>Last 7 days</small></div><div><b>'+v30+'</b><small>Last 30 days</small></div><div><b>'+Object.keys(uq).length+'</b><small>Unique visitors (30 days)</small></div></div>'
+ +'<h3 style="margin:50px 0 6px">Last 14 days</h3><p class="mt" style="font-size:13px">Oldest → today</p><div class="bars">'+days.map(function(k){return'<i title="'+k+': '+cnt[k]+'" style="height:'+Math.max(3,cnt[k]/mx*100)+'%"><span>'+cnt[k]+'</span></i>'}).join("")+'</div>'
+ +'<div class="ag"><div><h3>Top pages (30 days)</h3>'+(top.length?top.map(function(k){return'<p class="rw"><span>'+esc(k)+'</span><b>'+pg[k]+'</b></p>'}).join(""):'<p class="mt">No visits recorded yet.</p>')+'</div>'
+ +'<div><h3>Recent enquiries</h3>'+(L.length?L.slice(0,5).map(function(x){return'<p class="rw" style="display:block"><b>'+new Date(x.t).toLocaleString()+' · '+esc(x.ch)+'</b><br><span class="mt">'+esc(String(x.m).replace(/\n+/g," · ").slice(0,160))+'</span></p>'}).join(""):'<p class="mt">No enquiries yet.</p>')+'</div></div>'
+ +'<div class="ag"><div><h3>Your contact details</h3><p class="rw"><span>Email</span><b>'+esc(EMAIL)+'</b></p><p class="rw"><span>Phone</span><b>'+esc(PHONE)+'</b></p></div></div>'+note();var lo=document.getElementById("lo");if(lo)lo.onclick=function(){try{sessionStorage.removeItem("ea")}catch(x){}admin()}}
+var sph=null;
+function sphere(r){if(sph){sph.stop();sph=null}
+ var cv=document.getElementById("sph");if(!cv||!window.THREE)return;
+ try{var T=THREE,rd=new T.WebGLRenderer({canvas:cv,alpha:true,antialias:false});rd.setPixelRatio(Math.min(devicePixelRatio,1.5));
+ var sc=new T.Scene(),cam=new T.PerspectiveCamera(50,1,.1,100);cam.position.z=5.2;
+ var N=innerWidth<860?3500:9000,pos=new Float32Array(N*3),col=new Float32Array(N*3),c1=new T.Color("#a78bfa"),c2=new T.Color("#22d3ee"),c3=new T.Color("#f472b6");
+ for(var i=0;i<N;i++){var y=1-2*(i+.5)/N,rad=Math.sqrt(1-y*y),th=i*2.399963,k=1.5+.14*Math.sin(y*8+th*3)+.08*Math.sin(th*5),x=Math.cos(th)*rad*k;pos[i*3]=x;pos[i*3+1]=y*k;pos[i*3+2]=Math.sin(th)*rad*k;var q=(y+1)/2,c=q<.5?c1.clone().lerp(c3,q*2):c3.clone().lerp(c2,(q-.5)*2);col[i*3]=c.r;col[i*3+1]=c.g;col[i*3+2]=c.b}
+ var g=new T.BufferGeometry();g.setAttribute("position",new T.BufferAttribute(pos,3));g.setAttribute("color",new T.BufferAttribute(col,3));
+ var m=new T.PointsMaterial({size:.02,vertexColors:true,transparent:true,opacity:.9,blending:T.AdditiveBlending,depthWrite:false});
+ var pts=new T.Points(g,m),grp=new T.Group();grp.add(pts);sc.add(grp);
+ var mx=0,my=0,vis=true,raf=0,on=true;
+ function rs(){var w=cv.clientWidth,h=cv.clientHeight;if(!w||!h)return;rd.setSize(w,h,false);cam.aspect=w/h;cam.updateProjectionMatrix();var u=h/(2*5.2*Math.tan(25*Math.PI/180));grp.position.x=w>860?1.5:0;grp.position.y=Math.max(0,(h-innerHeight)/2)/u+(w>860?0:.9);grp.scale.setScalar(w>860?1:.7)}
+ rs();
+ var mv=function(e){mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5};
+ addEventListener("pointermove",mv);addEventListener("resize",rs);
+ var io2=new IntersectionObserver(function(e){vis=e[0].isIntersecting});io2.observe(cv);
+ (function lp(t){if(!on)return;raf=requestAnimationFrame(lp);if(!vis)return;
+  if(!rm){grp.rotation.y+=.003;pts.scale.setScalar(1+Math.sin(t*.0012)*.03)}
+  grp.rotation.x+=(my*.8-grp.rotation.x)*.05;grp.rotation.z+=(-mx*.4-grp.rotation.z)*.05;
+  rd.render(sc,cam)})(0);
+ sph={stop:function(){on=false;cancelAnimationFrame(raf);removeEventListener("pointermove",mv);removeEventListener("resize",rs);io2.disconnect();g.dispose();m.dispose();rd.dispose()}}
+ }catch(e){cv.style.display="none"}}
+function PIN(){var S=[["Discover","Understand the business and objective: goals, audience and competitors."],["Strategy","Plan the right digital direction: structure, content and channels."],["Create","Design, develop and build, with previews along the way."],["Launch","Deliver, refine and support after your project is live."]];
+ return'<section class="pin" id="pin"><div class="pin-in"><div class="w pg"><b id="pn">01</b><div class="pc">'+S.map(function(x,i){return'<div class="ps'+(i?'':' on')+'"><h2>'+x[0]+'</h2><p>'+x[1]+'</p></div>'}).join("")+'</div></div><div class="w"><div class="pbw"><i id="pbar"></i></div><p class="mt" style="font-size:13px;margin-top:10px">Keep scrolling</p></div></div></section>'}
+P.process=(function(o){return function(q){var h=o(q),i=h.indexOf("</section>")+10;return h.slice(0,i)+PIN()+h.slice(i)}})(P.process);
+function pinUpd(){var pin=document.getElementById("pin");if(!pin)return;var r=pin.getBoundingClientRect(),p=Math.min(1,Math.max(0,-r.top/Math.max(1,r.height-innerHeight))),n=pin.querySelectorAll(".ps"),i=Math.min(n.length-1,Math.floor(p*n.length));
+ n.forEach(function(e,k){e.classList.toggle("on",k===i)});document.getElementById("pbar").style.transform="scaleX("+p+")";var pn=document.getElementById("pn"),v="0"+(i+1);if(pn.textContent!==v)pn.textContent=v}
+function pinInit(){pinUpd()}
+addEventListener("scroll",pinUpd,{passive:true});
+(function(){var a=document.createElement("a");a.id="wa";a.href="https://wa.me/"+WA+"?text="+encodeURIComponent("Hi Veyqora, I would like to know more about your services.");a.target="_blank";a.rel="noopener";a.setAttribute("aria-label","Chat on WhatsApp");
+ a.innerHTML='<svg viewBox="0 0 24 24" width="28" height="28" fill="#fff" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.1 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.3 5.3 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.2-.2-.5-.3z"/></svg><span>Chat on WhatsApp</span>';document.body.appendChild(a)})();
+var sm={t:0,c:0,on:false};
+if(!rm&&matchMedia("(pointer:fine)").matches){
+ sm.t=sm.c=scrollY;
+ var smTick=function(){sm.c+=(sm.t-sm.c)*.1;if(Math.abs(sm.t-sm.c)<.5){sm.c=sm.t;sm.on=false}scrollTo({top:sm.c,behavior:"instant"});if(sm.on)requestAnimationFrame(smTick)};
+ addEventListener("wheel",function(e){if(e.ctrlKey||e.defaultPrevented)return;if(e.target.closest&&e.target.closest("textarea,select,input"))return;e.preventDefault();var mx=document.documentElement.scrollHeight-innerHeight;if(!sm.on)sm.t=sm.c=scrollY;sm.t=Math.max(0,Math.min(mx,sm.t+e.deltaY*(e.deltaMode===1?32:1)));if(!sm.on){sm.on=true;requestAnimationFrame(smTick)}},{passive:false});
+ addEventListener("scroll",function(){if(!sm.on){sm.t=sm.c=scrollY}},{passive:true});
+}
+function splitH2(){app.querySelectorAll("h2").forEach(function(h){if(h.closest("#hs")||h.closest(".ps")||h.classList.contains("sp"))return;var t=h.textContent;h.setAttribute("aria-label",t);h.classList.remove("rv");h.style.transitionDelay="";
+ h.innerHTML=t.split(" ").map(function(w,i){return'<span class="wm" aria-hidden="true"><span class="wi" style="transition-delay:'+(i*.07)+'s">'+esc(w)+'</span></span>'}).join(" ");h.classList.add("sp")})}
+function tiltInit(){if(rm||!matchMedia("(pointer:fine)").matches)return;
+ app.querySelectorAll(".cd>div,.bl article,.ad div").forEach(function(el){
+  el.addEventListener("pointermove",function(e){var r=el.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;el.style.transition="transform .12s,box-shadow .3s,border-color .3s";el.style.transform="perspective(800px) rotateX("+((.5-y)*10)+"deg) rotateY("+((x-.5)*12)+"deg) translateZ(6px)";el.style.setProperty("--gx",x*100+"%");el.style.setProperty("--gy",y*100+"%")});
+  el.addEventListener("pointerleave",function(){el.style.transition="transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .3s,border-color .3s";el.style.transform=""})})}
+function rollBtns(){document.querySelectorAll(".btn").forEach(function(b){if(b.querySelector(".rt"))return;for(var n=b.firstChild;n;n=n.nextSibling){if(n.nodeType===3&&n.textContent.trim()){var t=n.textContent.trim(),s=document.createElement("span");s.className="rt";s.setAttribute("data-t",t);s.innerHTML="<span>"+esc(t)+"</span>";b.replaceChild(s,n);break}}})}
+function HS(){return'<section class="hs" id="hs"><div class="hs-in"><div class="hs-track"><div class="hp hp0"><div><span class="pill">SELECTED WORK</span><h2>Projects we are proud of.</h2><p class="mt" style="margin-top:18px;max-width:24em">A look at some of the digital work we have created. Keep scrolling →</p></div></div><div class="hp"><div class="hp-card">'+workCard()+'</div></div><div class="hp hp2"><div><h2>Your project could be next.</h2><a class="btn" style="margin-top:28px" href="#/contact">Start a Project <b>→</b></a></div></div></div><div class="hs-bar"><i id="hsb"></i></div></div></section>'}
+P.work=(function(o){return function(q){var h=o(q),i=h.indexOf("</section>")+10;return HS()+h.slice(i)}})(P.work);
+function hsUpd(){var h=document.getElementById("hs");if(!h||innerWidth<=860)return;var tr=h.querySelector(".hs-track"),r=h.getBoundingClientRect(),p=Math.min(1,Math.max(0,-r.top/Math.max(1,r.height-innerHeight))),mx=tr.scrollWidth-innerWidth;tr.style.transform="translate3d("+(-p*mx)+"px,0,0)";document.getElementById("hsb").style.transform="scaleX("+p+")"}
+function hsInit(){var h=document.getElementById("hs");if(!h)return;h.querySelectorAll(".rv").forEach(function(e){e.classList.add("in")});var tr=h.querySelector(".hs-track");if(innerWidth<=860){h.style.height="";tr.style.transform="";return}h.style.height=(innerHeight+tr.scrollWidth-innerWidth)+"px";hsUpd()}
+function extras(){splitH2();tiltInit();rollBtns();hsInit()}
+addEventListener("scroll",hsUpd,{passive:true});addEventListener("resize",hsInit);
+addEventListener("scroll",function(){var d=document.documentElement;document.getElementById("sp").style.transform="scaleX("+(scrollY/Math.max(1,d.scrollHeight-innerHeight))+")"},{passive:true});
+addEventListener("hashchange",go);route();if(!rm)document.getElementById("wp").classList.add("go");
+})();
+</script>
+</body>
+</html>
